@@ -1,0 +1,121 @@
+/* these all apply to the body element -> global rules */
+
+* {
+    border: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+.hidden { display: none; }
+
+html, body { height: 100% }
+
+body { 
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: rgb(31, 15, 82);
+  color:rgb(250, 250, 254);
+  background-blend-mode: difference;
+  font-size: large;
+}
+
+/* main header rules */
+header {
+    background-color: white;
+    background-image: url('../image/bg.jpg');
+    width: 100%;
+    text-align: center;
+    background-size: cover;
+ 
+}
+
+#main-logo { width: 225px; padding: 10px 0; }
+
+
+
+
+/* main rules here */
+
+
+
+
+.hidden { display: none; }
+
+.icon-container {
+    text-align: center;
+}
+
+.wrapper {
+    width: 15%;
+    display: inline-block;
+    box-shadow: 2px;
+
+    padding: 1em;
+}
+
+.motion:hover {
+    color: blue;
+    background-blend-mode: screen;
+}
+
+.wrapper img { 
+    width: 100%;
+}
+
+
+
+.object-border{
+    border-width: 3px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 50%;
+}
+
+/* 
+div.wrapper {
+    transition: fill .4s ease;
+} */
+
+
+div.wrapper:hover object {
+  
+    opacity: 40%;
+}
+
+article { padding: 20px; }
+
+/* select the h3 tag inside the article tag on the page */
+/* a selector followed by a space and then ANOTHER selector gets a reference to the parent element and then the child element or elements inside of it */
+article h3  {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+/* select the p tag inside the article tag on the page */
+article p {
+    width: 80%;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+
+/* footer rules here */
+footer {
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.sticky_footer {
+    position: sticky;
+    top: 100%;
+
+    height: 80px;
+    background-color: rgb(14, 9, 43);
+}
+
+.wrapper:hover .object-border { fill: greenyellow; }
